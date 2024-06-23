@@ -28,5 +28,14 @@ public class T2_getText_getAttribute {
         } else {
             System.out.println("Expected header for form: \"" + LoopCampConstants.EXPECTED_HEADER_FOR_FORM + "\", DOES NOT MATCH header for form: \"" + actualHeaderForForm + "\" => TEST FAIL");
         }
+
+        WebElement firstNamePlaceHolder = driver.findElement(By.name("firstname"));
+        String actualPlaceholderForFirstName = firstNamePlaceHolder.getAttribute("placeholder");
+
+        if (actualPlaceholderForFirstName.equals(LoopCampConstants.EXPECTED_PLACEHOLDER_FIRSTNAME)) {
+            System.out.println("Expected placeholder form: \"" + LoopCampConstants.EXPECTED_PLACEHOLDER_FIRSTNAME + "\", matches actual placeholder form: \"" + actualPlaceholderForFirstName + "\" => TEST PASSED");
+        } else {
+            System.out.println("Expected placeholder form: \"" + LoopCampConstants.EXPECTED_PLACEHOLDER_FIRSTNAME + "\", DOES NOT MATCH actual placeholder form: \"" + actualPlaceholderForFirstName + "\" => TEST FAILED");
+        }
     }
 }

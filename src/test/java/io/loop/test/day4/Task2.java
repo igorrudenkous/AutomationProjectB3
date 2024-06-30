@@ -30,6 +30,7 @@ public class Task2 {
         }
         WebDriverUtil.ValidateLogIn(afterLoginWindow);
 
+        Thread.sleep(1000);
         WebElement continueButtom = driver.findElement(By.xpath("//button[@type='submit']"));
         continueButtom.click();
         Thread.sleep(1000);
@@ -37,7 +38,7 @@ public class Task2 {
         profileButtom.click();
         WebElement logOutButtom = driver.findElement(By.xpath("//span[normalize-space() = 'Log out']"));
         logOutButtom.click();
-        Thread.sleep(600);
+        Thread.sleep(1000);
         WebElement loginPageText = driver.findElement(By.xpath("//h1[@class='text-h5 font-weight-medium mb-6']"));
         WebDriverUtil.ValidateLogOut(loginPageText);
 

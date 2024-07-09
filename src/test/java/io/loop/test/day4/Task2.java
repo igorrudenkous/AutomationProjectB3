@@ -18,7 +18,7 @@ public class Task2 {
         WebElement passwordInputBox = driver.findElement(By.xpath("//input[contains(@id, 'input-15')]"));
         WebElement logInButtom = driver.findElement(By.xpath("//span[normalize-space() = 'Log in']"));
         userNameOrEmailInputBox.sendKeys(DocuportConstants.USERNAME_CLIENT);
-        passwordInputBox.sendKeys(DocuportConstants.PASSWORD_CLIENT);
+        passwordInputBox.sendKeys(DocuportConstants.PASSWORD);
         logInButtom.click();
         Thread.sleep(2000);
 

@@ -6,5 +6,10 @@ Validate "Parent Iframe" text
 Validate the "Sample Nested Iframe page. There are nested iframes in this page. Use browser inspecter or firebug to check out the HTML source. In total you can switch between the parent frame and the nested child frame."
  */
 
-public enum H2_Task_iFrame {
+import io.loop.test.base.TestBase;
+
+public class H2_Task_iFrame extends TestBase{
+
+
+
 }

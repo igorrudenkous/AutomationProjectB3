@@ -30,7 +30,7 @@ public class Driver {
      * singleton patter
      * @return
      */
-    public static WebDriver getDriver(){
+    public static <ChromeOptions> WebDriver getDriver(){
         if(driver==null){
             String browserType = ConfigurationReader.getProperties("browser");
             switch (browserType.toLowerCase()){
